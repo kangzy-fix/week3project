@@ -1,34 +1,34 @@
-document.getElementById("submitButton").onclick = function(){
+document.getElementById("submitButton").onclick = function () {
     let quantityInputA = document.getElementById("quantityInputA").value;
-    document.getElementById("shedA").innerHTML=quantityInputA;
+    document.getElementById("shedA").innerHTML = quantityInputA;
 
 
     let quantityInputB = document.getElementById("quantityInputB").value;
-    document.getElementById("shedB").innerHTML=quantityInputB;
+    document.getElementById("shedB").innerHTML = quantityInputB;
 
 
     let quantityInputC = document.getElementById("quantityInputC").value;
-    document.getElementById("shedC").innerHTML=quantityInputC;
+    document.getElementById("shedC").innerHTML = quantityInputC;
 
 
     let quantityInputD = document.getElementById("quantityInputD").value;
-    document.getElementById("shedD").innerHTML=quantityInputD;
+    document.getElementById("shedD").innerHTML = quantityInputD;
 
     let totalProduction = 0;
-    let sumArray = [ quantityInputA,quantityInputB,quantityInputC, quantityInputD ];
+    let sumArray = [quantityInputA, quantityInputB, quantityInputC, quantityInputD];
 
-    for(var i=0;i<sumArray.length;i++){
+    for (var i = 0; i < sumArray.length; i++) {
 
-    console.log(sumArray[i]);
-    totalProduction += Number(sumArray[i]);
+        console.log(sumArray[i]);
+        totalProduction += Number(sumArray[i]);
     }
 
-    document.getElementById("totalP").innerHTML=totalProduction;
+    document.getElementById("totalP").innerHTML = totalProduction;
 
 }
 
-function incomeOverTime(selling_price, time){
-    
+function incomeOverTime(selling_price, time) {
+
 
 }
 
