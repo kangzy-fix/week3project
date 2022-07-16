@@ -42,10 +42,37 @@
             <p>Your production in Shed <span id="shedC"></span> litres per day</p>
             <p>Your production in Shed <span id="shedD"></span> litres per day</p>
             <p>The total production is  <span id="totalP"></span>litres per day  </p>
-        </div>
-       
+        </div>        
+    </div>
 
-        <!-- <textarea name="totalProduction" id="total" cols="30" rows="10"></textarea> -->
+    <div class="formcontainer">
+        <h2>Income over Time</h2>
+        <form action="#">
+            <div class="quantityInput">
+                <div>
+                    <label for="sellingPrice">Selling Price</label>
+                    <input type="number" id="sellingPrice" min="0">
+                </div>
+                <br>
+                <div>
+                    <label for="weekly">weekly</label>
+                    <input type="number" id="weekly" min="0">
+               </div>
+               <br>
+               <div>
+                <label for="yearly">yearly</label>
+                <input type="number" id="yearly" min="0">
+           </div>
+                <br>
+            </div>
+            <div class="formbuttons">
+                <button type="reset">Reset</button>
+                <button type="submit" id="IncomeButton">Total Income</button>
+            </div>
+        </form>
+        <p>Your weekly income will be Ksh <span id="incomeweekly"></span></p>
+        <p>Your yearly income will be Ksh <span id="incomeyearly"></span></p>
+
         
     </div>
     <div class="formcontainer">
@@ -74,50 +101,9 @@
             </div>
             <div class="formbuttons">
                 <button type="reset">Reset</button>
-                <button type="submit" id="submitButton">Total Production</button>
+                <button type="submit" id="ff">Total Production</button>
             </div>
-        </form>
-       
-       
-
-        <!-- <textarea name="totalProduction" id="total" cols="30" rows="10"></textarea> -->
-        
-    </div>
-    <div class="formcontainer">
-        <h2>Daily Milk Production</h2>
-        <form action="#">
-            <div class="quantityInput">
-                <div>
-                    <label for="quantityInputA">Shed A</label>
-                    <input type="number" id="quantityInputA" min="0">
-                </div>
-                <br>
-                <div>
-                    <label for="quantityInputB">Shed B</label>
-                    <input type="number" id="quantityInputB" min="0">
-               </div>
-                <br>
-                <div>
-                    <label for="quantityInputC">Shed C</label>
-                    <input type="number" id="quantityInputC" min="0">
-                </div>
-                <br>
-                <div>
-                    <label for="quantityInputD">Shed D</label>
-                    <input type="number" id="quantityInputD" min="0">
-                </div>
-            </div>
-            <div class="formbuttons">
-                <button type="reset">Reset</button>
-                <button type="submit" id="submitButton">Total Production</button>
-            </div>
-        </form>
-        
-            
-       
-
-        <!-- <textarea name="totalProduction" id="total" cols="30" rows="10"></textarea> -->
-        
+        </form>        
     </div>
  
     <script src="projo.js"></script>
