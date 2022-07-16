@@ -2,17 +2,20 @@
     margin: 0;
     padding: 0;
 }
+
 .formcontainer {
-   border: 1px solid black; 
-   width: 50%;
-   text-align: center;
-   margin: auto;
-   margin-top: 20vh;
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20vh;
 }
+
 .formcontainer h2 {
     margin-top: 5vh;
     font-size: 35px;
 }
+
 .quantityInput {
     display: flex;
     justify-content: center;
@@ -20,25 +23,29 @@
     flex-direction: column;
     height: 40vh;
 }
+
 div label {
     margin-right: 2vh;
     font-size: 20px;
 }
+
 div input {
     padding: 10px;
     font-size: 20px;
     width: 40%;
 }
+
 .formbuttons {
     display: flex;
     justify-content: left;
 
 }
+
 .formbuttons button {
     background-color: aquamarine;
     border: none;
     padding: 10px;
     font-size: 18px;
     margin: 1%;
-   
+
 }
