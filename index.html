@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DairyFarm</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="formcontainer">
+        <h2>Daily Milk Production</h2>
+        <form action="#">
+            <div class="quantityInput">
+                <div>
+                    <label for="quantityInputA">Shed A</label>
+                    <input type="number" id="quantityInputA" min="0">
+                </div>
+                <br>
+                <div>
+                    <label for="quantityInputB">Shed B</label>
+                    <input type="number" id="quantityInputB" min="0">
+               </div>
+                <br>
+                <div>
+                    <label for="quantityInputC">Shed C</label>
+                    <input type="number" id="quantityInputC" min="0">
+                </div>
+                <br>
+                <div>
+                    <label for="quantityInputD">Shed D</label>
+                    <input type="number" id="quantityInputD" min="0">
+                </div>
+            </div>
+            <div class="formbuttons">
+                <button type="reset">Reset</button>
+                <button type="submit" id="submitButton">Submit</button>
+            </div>
+        </form>
+        <textarea name="totalProduction" id="total" cols="30" rows="10"></textarea>
+    </div>
+ 
+</head>
+<body>
+    <script src=".projo.js"></script>
+</body>
+</html>
