@@ -40,8 +40,7 @@ week 3 project about a dairy business
 * JAVASCRIPT - is the text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
 
 ## Reference
-* 
-Moringa School Course Content
+* Moringa School Course Content
 
 [Go Back to the top](#portfolio)
 
