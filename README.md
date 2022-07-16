@@ -31,7 +31,7 @@ week 3 project about a dairy business
 ### Installation Process
 * Run the index.html on any web browser
 
-[Go Back to the top](#portfolio)Kangacha
+[Go Back to the top](#portfolio) Kangacha
 ## Technology Used
 * HTML - is the markup language used to build the structure of the pages.
 
@@ -53,8 +53,8 @@ No licence required
 
 ## Authors Info
 
-Slack Profile - [@Kangzy Fix]
+Slack Profile - [@IAN KANGACHA]
 
-Email Address - [kangzy fix](kangzy.fix@student.moringaschool.com)
+Email Address - [kangzy.fix@student.moringaschool.com](kangzy.fix@student.moringaschool.com)
 
 [Go Back to the top](#portfolio)
