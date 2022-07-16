@@ -52,7 +52,7 @@ No licence required
 
 ## Authors Info
 
-Slack Profile - [@IAN KANGACHA]
+Slack Profile - [Ian kangacha]
 
 Email Address - [kangzy.fix@student.moringaschool.com](kangzy.fix@student.moringaschool.com)
 
