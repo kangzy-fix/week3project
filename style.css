@@ -27,11 +27,14 @@
 }
 
 .logo p a {
-    text-decoration: none;
-    color: white;
+    text-decoration: underline;
+    color: whitesmoke;
     font-size: 30px;
     font-weight: 800;
     font-family: cursive;
+    text-shadow: 2px 2px 1px grey;
+    
+
 }
 
 nav {
