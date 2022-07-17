@@ -1,67 +1,56 @@
+let price = 45;
 
-    var totalProduction = 0;
-document.getElementById("submitButton").onclick = function () {
-    let quantityInputA = document.getElementById("quantityInputA").value;
-    document.getElementById("shedA").innerHTML = quantityInputA;
+function dailyProduction() {
+    const valueShedA = parseInt(document.getElementById("quantityInputA").value);
+    document.getElementById("dailyShedA").innerHTML = "Your production in Shed A is " + valueShedA + " litres per day"
+    console.log(valueShedA)
 
+    const valueShedB = parseInt(document.getElementById("quantityInputB").value);
+    document.getElementById("dailyShedB").innerHTML = "Your production in Shed B is " + valueShedB + " litres per day"
+    console.log(valueShedB)
 
-    let quantityInputB = document.getElementById("quantityInputB").value;
-    document.getElementById("shedB").innerHTML = quantityInputB;
+    const valueShedC = parseInt(document.getElementById("quantityInputC").value);
+    document.getElementById("dailyShedC").innerHTML = "Your production in Shed C is " + valueShedC + " litres per day"
+    console.log(valueShedC)
 
+    const valueShedD = parseInt(document.getElementById("quantityInputD").value);
+    document.getElementById("dailyShedD").innerHTML = "Your production in Shed D is " + valueShedD + " litres per day"
+    console.log(valueShedD)
 
-    let quantityInputC = document.getElementById("quantityInputC").value;
-    document.getElementById("shedC").innerHTML = quantityInputC;
+    const totalProduction = parseInt(valueShedA + valueShedB + valueShedC + valueShedD)
+    document.getElementById("totalDailySheds").innerHTML = "Your production in all sheds is " + totalProduction + " litres per day"
+    console.log(totalProduction)
 
+    const weeklyIncome = totalProduction * 7 * price;
+    document.getElementById("weeklyIncome").innerHTML = "Your weekly income will be Ksh " + weeklyIncome;
 
-    let quantityInputD = document.getElementById("quantityInputD").value;
-    document.getElementById("shedD").innerHTML = quantityInputD;
+    const yearlyIncome = totalProduction * 366 * price;
+    document.getElementById("yearlyIncome").innerHTML = "Your yearly income will be Ksh " + yearlyIncome;
 
-     totalProduction = 0;
-    let sumArray = [quantityInputA, quantityInputB, quantityInputC, quantityInputD];
-
-    for (var i = 0; i < sumArray.length; i++) {
-
-        console.log(sumArray[i]);
-        totalProduction += Number(sumArray[i]);
-    }
-
-    document.getElementById("totalP").innerHTML = totalProduction;
+    const janIncome = totalProduction * 31 * price;
+    document.getElementById("jan").innerHTML = "Your  January income will be Ksh " + janIncome;
+    const febIncome = totalProduction * 29 * price;
+    document.getElementById("feb").innerHTML = "Your  February income will be Ksh " + febIncome;
+    const marIncome = totalProduction * 31 * price;
+    document.getElementById("mar").innerHTML = "Your  March income will be Ksh " + marIncome;
+    const aprIncome = totalProduction * 30 * price;
+    document.getElementById("apr").innerHTML = "Your April income will be Ksh " + aprIncome;
+    const mayIncome = totalProduction * 31 * price;
+    document.getElementById("may").innerHTML = "Your May income will be Ksh " + mayIncome;
+    const junIncome = totalProduction * 30 * price;
+    document.getElementById("jun").innerHTML = "Your June income will be Ksh " + junIncome;
+    const julIncome = totalProduction * 31 * price;
+    document.getElementById("jul").innerHTML = "Your July income will be Ksh " + julIncome;
+    const augIncome = totalProduction * 31 * price;
+    document.getElementById("aug").innerHTML = "Your August income will be Ksh " + augIncome;
+    const sepIncome = totalProduction * 30 * price;
+    document.getElementById("sep").innerHTML = "Your September income will be Ksh " + sepIncome;
+    const octIncome = totalProduction * 31 * price;
+    document.getElementById("oct").innerHTML = "Your October income will be Ksh " + octIncome;
+    const novIncome = totalProduction * 30 * price;
+    document.getElementById("nov").innerHTML = "Your November income will be Ksh " + novIncome;
+    const decIncome = totalProduction * 31 * price;
+    document.getElementById("dec").innerHTML = "Your December income will be Ksh " + decIncome;
 
 }
-
-document.getElementById("IncomeButton").onclick = function () {
-    console.log('test');
-    let sellingPrice = document.getElementById("sellingPrice").value;
-    let weekly = document.getElementById("weekly").value;
-    let yearly = document.getElementById("yearly").value;
-
-
-    incomeOverTime(sellingPrice, weekly, yearly)
-}
-function incomeOverTime(selling_price, time, yearly) {
-    let totalincomeWeekly = totalProduction * selling_price * time;
-    document.getElementById("incomeweekly").innerHTML = totalincomeWeekly;
-
-    let totalincomeYearly = totalProduction * selling_price * yearly;
-    document.getElementById("incomeyearly").innerHTML = totalincomeYearly
-
-    
-}
-
-
-
-// var totalProduction = document.getElementById("totalProduction").innerHTML = function(){
-//     let quantityInputA = document.getElementById("quantityInputA").value;
-//     // return quantityInputA;
-
-//     let quantityInputB = document.getElementById("quantityInputB").value;
-//     // return quantityInputB;
-
-//     let quantityInputC = document.getElementById("quantityInputC").value;
-//     // return quantityInputC;
-
-//     let quantityInputD = document.getElementById("quantityInputD").value;
-//     // return quantityInputD;
-
-//     totalProduction = quantityInputA + quantityInputB + quantityInputC + quantityInputD
-//     console.log(totalProduction)
+submitButton.addEventListener("click", dailyProduction)
