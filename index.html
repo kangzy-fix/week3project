@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,76 +9,201 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background-color: orange;">
+
+    <div class="navbar">
+        <div class="logo">
+            <p><a href="index.html">DAIRY FARM</a></p>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact us</a>
+
+        </nav>
+        <div class="navbutton">
+            <button class="loginbtn">Login</button>
+            <button class="getbtn">GET STARTED</button>
+        </div>
+    </div>
+
+
+
     <div class="formcontainer">
         <h2>Daily Milk Production</h2>
         <form action="#">
             <div class="quantityInput">
+
                 <div>
                     <label for="quantityInputA">Shed A</label>
                     <input type="number" id="quantityInputA" min="0">
                 </div>
                 <br>
                 <div>
-                    <label for="quantityInputB">Shed B</label>
+                    <label for="dailyInputB">Shed B</label>
                     <input type="number" id="quantityInputB" min="0">
                 </div>
                 <br>
                 <div>
-                    <label for="quantityInputC">Shed C</label>
+                    <label for="dailyInputC">Shed C</label>
                     <input type="number" id="quantityInputC" min="0">
                 </div>
                 <br>
                 <div>
-                    <label for="quantityInputD">Shed D</label>
+                    <label for="dailyInputD">Shed D</label>
                     <input type="number" id="quantityInputD" min="0">
                 </div>
             </div>
             <div class="formbuttons">
                 <button type="reset">Reset</button>
-                <button type="submit" id="submitButton">Total Production</button>
+                <button type="submit" id="submitButton">Submit</button>
             </div>
         </form>
-        <div>
-            <p>Your production in Shed <span id="shedA"></span> litres per day</p>
-            <p>Your production in Shed <span id="shedB"></span> litres per day</p>
-            <p>Your production in Shed <span id="shedC"></span> litres per day</p>
-            <p>Your production in Shed <span id="shedD"></span> litres per day</p>
-            <p>The total production is <span id="totalP"></span>litres per day </p>
+    </div>
+    <div class="dailyproduction">
+        <p id="dailyShedA"></p>
+        <p id="dailyShedB"></p>
+        <p id="dailyShedC"></p>
+        <p id="dailyShedD"></p>
+        <p id="totalDailySheds"></p>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="reportscontainer">
+        <div class="weeklyreport">
+            <h2>Weekly Income</h2>
+            <p id="weeklyIncome"></p>
         </div>
-    </div>
-
-    <div class="formcontainer">
-        <h2>Income over Time</h2>
-        <form action="#">
-            <div class="quantityInput">
-                <div>
-                    <label for="sellingPrice">Selling Price</label>
-                    <input type="number" id="sellingPrice" min="0">
-                </div>
-                <br>
-                <div>
-                    <label for="weekly">weekly</label>
-                    <input type="number" id="weekly" min="0">
-                </div>
-                <br>
-                <div>
-                    <label for="yearly">yearly</label>
-                    <input type="number" id="yearly" min="0">
-                </div>
-                <br>
-            </div>
-            <div class="formbuttons">
-                <button type="reset">Reset</button>
-                <button type="submit" id="IncomeButton">Total Income</button>
-            </div>
-        </form>
-        <p>Your weekly income will be Ksh <span id="incomeweekly"></span></p>
-        <p>Your yearly income will be Ksh <span id="incomeyearly"></span></p> 
-
+        <div class="yearlyReport">
+            <h2>Yearly Income</h2>
+            <P id="yearlyIncome"></P>
+            <p id="jan"></p>
+            <p id="feb"></p>
+            <p id="mar"></p>
+            <p id="apr"></p>
+            <p id="may"></p>
+            <p id="jun"></p>
+            <p id="jul"></p>
+            <p id="aug"></p>
+            <p id="sep"></p>
+            <p id="oct"></p>
+            <p id="nov"></p>
+            <p id="dec"></p>
+        </div>
 
     </div>
-   
+    <footer>
+        <div class="touch">
+            <h3>
+                We'd Like to keep in touch
+            </h3>
+            <p>
+                Subscribe to our newsletter
+            </p>
+            <br>
+            <div id="buttons">
+                <button id="email">
+                    Enter your email address
+                </button>
+                <button id="subscribe">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+        <hr style="width: 100%;height: 5px;">
+        <div class="mainfooter">
+            <div class="section1">
+                <h1>
+                    DairyFarm
+                </h1>
+                <br>
+                <p>
+                    Get the fastest way to get  <br> your total production on milk.
+                </p>
+                <br>
+                <div class="icons">
+                    <img src="images/twitter.jpeg">
+                    <img src="images/facebook.jpeg">
+                    <img src="images/instagram.jpeg">
+                </div>
+                <h3>
+                    Get the app
+                </h3>
+                <div class="downloads">
+                    <img src="images/applestore.jpeg">
+                    <img src="images/googleplaystore.jpeg">
+                </div>
+            </div>
+            <div class="section2">
+                <h2>
+                    Company
+                </h2>
+                <br>
+                <p>
+                    <a href="#"> <ul><li> About </li></ul></a>
+                </p>
+                <br>
+                <p>
+                    <a href="#"> Product</a>
+                </p>
+                <br>
+                <p>
+                    <a href="#">Contact Us</a>
+                </p>
+            </div>
+            <div class="section3">
+                <h2>
+                    Products
+                </h2>
+                <br>
+                <p>
+                    <a href="#">Dairy</a>
+                </p>
+                <br>
+                <p>
+                    <a href="#">Price</a>
+                </p>
+                <br>
+                <p>
+                    <a href="#">Milk</a>
+                </p>
+                <br>
+                <p>
+                    <a href="#">More....</a>
+                </p>
+            </div>
+            <div class="section4">
+                <h2>
+                    Others
+                </h2>
+                <br>
+                <p>
+                    <a href="#">FAQs</a>
+                </p>
+                <br>
+                <p>
+                    <a href="#">Terms of Services</a>
+                </p>
+                <br>
+                <p>
+                    <a href="#">Privacy and Policy</a>
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
 
 
 
