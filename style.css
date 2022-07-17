@@ -3,12 +3,85 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 8px;
+}
+
+.logo {
+    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.logo p a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: cursive;
+}
+
+nav {
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+
+}
+
+.navbutton {
+    padding: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.loginbtn {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: none;
+
+
+}
+
+.getbtn {
+    background-color: #ED661F;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+
 .formcontainer {
-    border: 1px solid black;
+    background-color: yellow;
+    border: 1px solid white;
     width: 50%;
     text-align: center;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
 }
 
 .formcontainer h2 {
@@ -38,16 +111,186 @@ div input {
 .formbuttons {
     display: flex;
     justify-content: left;
-
 }
 
 .formbuttons button {
-    background-color: aquamarine;
+    background-color: crimson;
     border: none;
     padding: 10px;
     font-size: 18px;
     margin: 1%;
-    
+    border-radius: 10px;
+}
 
+.dailyproduction {
+    background-color: cornflowerblue;
+    color: black;
+    border: 1px white solid;
+    height: 180px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    font-size: 20px;
+}
 
+.dailyproduction p {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.reportscontainer {
+    background-color: wheat;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    height: 900px;
+}
+
+.reportscontainer h2 {
+    color: darkgreen;
+    font-size: 30px;
+}
+
+.reportscontainer p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 1px 1px navajowhite;
+    text-decoration: underline;
+}
+
+.touch {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.touch h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.touch p {
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+#email {
+    background-color: white;
+    border: none;
+    padding: 8px 24px;
+}
+
+#subscribe {
+    background-color: #ed661f;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    margin-left: -4px;
+}
+
+.mainfooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 50px;
+
+}
+
+.section1 {
+    width: 35%;
+    color: white;
+
+}
+
+.section1 h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.section1 p {
+    color: white;
+    font-size: 12px;
+}
+
+.icons {
+    width: 50%;
+    display: flex;
+
+}
+
+.icons img {
+    width: 15%;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.downloads {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.downloads img {
+    width: 30%;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.section2 {
+    width: 20%;
+}
+
+.section2 p a {
+    text-decoration: none;
+    color: white;
+}
+
+.section2 h2 {
+    color: white;
+}
+
+.section3 h2 {
+    color: white;
+}
+
+.section4 h2 {
+    color: white;
+}
+
+.section3 {
+    width: 20%;
+
+}
+
+.section3 p a {
+    text-decoration: none;
+    color: white;
+}
+
+.section4 {
+    width: 20%;
+}
+
+.section4 p a {
+    text-decoration: none;
+    color: white;
 }
