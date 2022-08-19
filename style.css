@@ -4,18 +4,6 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
-@media only screen and (max-width: 600px) {
-    .body {
-      background-color: lightblue;
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
-
-}
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -311,3 +299,17 @@ div input {
     text-decoration: none;
     color: white;
 }
+@media only screen and (max-width: 600px) {
+    .mainbody {
+      background-color: lightblue;
+      
+    }
+  }
+ @media only screen and (max-width: 768px){
+    
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+ }
+ 
